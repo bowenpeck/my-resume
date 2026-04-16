@@ -2,38 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bowen's Hobby Page</title>
+    <title>Bowen Peck - Hobbies</title>
     <link rel="stylesheet" href="scratch-style.css">
 </head>
 <body>
     <div class="main-container-div" id="top">
         <div class="header-div">
-            <h1>Bowen's Hobbies & Projects</h1>
-            <p><a href="index.html">← Back to Resume</a> | <a href="app.html">Try the App →</a></p>
+            <h1>Personal Projects & Interests</h1>
+            <nav>
+                <a href="index.html" style="font-weight: bold;">← Back to Professional Résumé</a> | 
+                <a href="app.html" style="font-weight: bold;">Try the 1RM App →</a>
+            </nav>
         </div>
+
         <div class="content-div">
-            <h2>Lifting & Strength</h2>
+            <h2>Lifting & Fitness Goals</h2>
             <ol>
-                <li>Training Goals
+                <li>Strength Training
                     <ul>
-                        <li>Current Bodyweight: 163 lbs</li>
+                        <li>Current Weight: 163 lbs</li>
                         <li>Bench Press Target: 225 lbs</li>
+                        <li>Focus: Science-based hypertrophy</li>
+                    </ul>
+                </li>
+                <li>Restoration
+                    <ul>
+                        <li>1960s Chevrolet C10 Project</li>
                     </ul>
                 </li>
             </ol>
-            <h2>Classic Chevy Restoration</h2>
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500" alt="Gym weights" style="border-radius: 10px; border: 5px solid #2980b9;">
+
+            <h2>Golf Technique Analysis</h2>
+            <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ssh8_S49Xio" title="Golf Swing Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             
-            <h2>Visualizing Data</h2>
-            <div class='tableauPlaceholder' style='width: 100%; height: 600px;'>
+            <br>
+            <h2>Vehicle Restoration Progress</h2>
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600" alt="Classic Truck" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;">
+
+            <h2>Global Economic Data</h2>
+            <div class='tableauPlaceholder' id='viz1713235000000' style='position: relative'>
+                <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Wo/WorldIndicators_16654546415610/GlobalPopulation/1_rss.png' style='border: none' /></a></noscript>
                 <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='name' value='Superstore_16999999999990&#47;Dashboard1' />
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='name' value='WorldIndicators_16654546415610&#47;GlobalPopulation' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
                 </object>
             </div>
-            <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-            <br>
-            <a href="#top" style="display: block; text-align: center; margin-top: 20px;">Jump to Top</a>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1713235000000');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width='100%';vizElement.style.height='600px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+            <br><br>
+            <a href="#top" style="display: block; text-align: center; background: #eee; padding: 10px; text-decoration: none; border-radius: 5px; color: #333;">Jump back to the top</a>
         </div>
     </div>
 </body>
