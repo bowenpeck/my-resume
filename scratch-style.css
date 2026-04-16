@@ -1,0 +1,27 @@
+body {
+    background-color: #f4f4f9; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    color: #333333; 
+    margin: 0;
+    padding: 0;
+}
+.main-container-div { 
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.header-div { 
+    text-align: center;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.content-div { 
+    line-height: 1.8;
+}
+.content-div h2 {
+    color: #2980b9; 
+}
