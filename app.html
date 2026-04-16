@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bench Press 1RM Calculator</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; margin-top: 50px; background-color: #222; color: white; }
+        .app-container { background: #333; padding: 30px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        input { padding: 10px; margin: 10px; border-radius: 5px; border: none; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #e74c3c; color: white; border: none; border-radius: 5px; }
+        button:hover { background: #c0392b; }
+        #result { margin-top: 20px; font-size: 24px; font-weight: bold; }
+        a { color: #aaaaaa; text-decoration: none; margin-top: 20px; display: inline-block;}
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <h2>Bench Press 1RM Calculator</h2>
+        <p>Goal Target: 225 lbs</p>
+        <input type="number" id="weight" placeholder="Weight lifted (lbs)">
+        <input type="number" id="reps" placeholder="Reps completed">
+        <br>
+        <button onclick="calculateMax()">Calculate Max</button>
+        <div id="result"></div>
+        <br>
+        <a href="scratch.html">Back to Scratch Page</a>
+    </div>
+
+    <script>
+        function calculateMax() {
+            let weight = document.getElementById('weight').value;
+            let reps = document.getElementById('reps').value;
+            if(weight && reps && reps > 0) {
+                let max = Math.round(weight * (1 + (reps / 30))); // Epley Formula
+                let diff = 225 - max;
+                let text = "Estimated 1RM: " + max + " lbs. <br>";
+                if(max >= 225) { text += "🔥 You hit the 225 club! 🔥"; } 
+                else { text += "Only " + diff + " lbs away from 225!"; }
+                document.getElementById('result').innerHTML = text;
+            } else {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+            }
+        }
+    </script>
+</body>
+</html>
