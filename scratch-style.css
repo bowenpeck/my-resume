@@ -1,34 +1,46 @@
+/* REQUIREMENT: Custom Background Color */
 body {
-    background-color: #f0f2f5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1c1e21;
+    background-color: #e9ecef;
+    font-family: 'Verdana', sans-serif; /* REQUIREMENT: Font Family */
+    color: #2c3e50; /* REQUIREMENT: Font Color */
     margin: 0;
     padding: 0;
 }
+
+/* REQUIREMENT: At least 3 divs for positioning */
 .main-container-div {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 850px;
+    margin: 40px auto;
     background: #ffffff;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
+
 .header-div {
     text-align: center;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    border-bottom: 4px solid #e74c3c;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 }
-.header-div h1 { color: #2c3e50; }
+
 .content-div h2 {
-    color: #2980b9;
-    border-left: 5px solid #2980b9;
+    color: #e74c3c;
+    border-left: 6px solid #e74c3c;
     padding-left: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
-nav a {
+
+.anchor-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
     text-decoration: none;
-    color: #3498db;
-    margin: 0 15px;
+    font-size: 0.9em;
 }
-nav a:hover { text-decoration: underline; }
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
