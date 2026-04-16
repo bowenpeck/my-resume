@@ -2,66 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bowen Peck - Hobbies</title>
+    <title>Bowen's Personal Interests</title>
     <link rel="stylesheet" href="scratch-style.css">
 </head>
-<body>
-    <div class="main-container-div" id="top">
+<body id="top">
+    <div class="main-container-div">
         <div class="header-div">
-            <h1>Personal Projects & Interests</h1>
+            <h1>Bowen's Interests & Projects</h1>
             <nav>
-                <a href="index.html" style="font-weight: bold;">← Back to Professional Résumé</a> | 
-                <a href="app.html" style="font-weight: bold;">Try the 1RM App →</a>
+                <a href="index.html">Professional Résumé</a> | 
+                <a href="app.html">Lifting Web App</a>
             </nav>
         </div>
 
         <div class="content-div">
-            <h2>Lifting & Fitness Goals</h2>
+            <h2>Activity Log</h2>
             <ol>
-                <li>Strength Training
+                <li>Outdoor Sports
                     <ul>
-                        <li>Current Weight: 163 lbs</li>
-                        <li>Bench Press Target: 225 lbs</li>
-                        <li>Focus: Science-based hypertrophy</li>
+                        <li>Skiing at Brighton ski resort</li>
+                        <li>Golfing (Current 4 handicap)</li>
                     </ul>
                 </li>
-                <li>Restoration
+                <li>Global Travels
                     <ul>
-                        <li>1960s Chevrolet C10 Project</li>
+                        <li>Australia</li>
+                        <li>Paris</li>
+                        <li>Brazil</li>
+                        <li>London</li>
                     </ul>
                 </li>
             </ol>
 
-            <h2>Golf Technique Analysis</h2>
-            <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ssh8_S49Xio" title="Golf Swing Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Current Restoration Project</h2>
+            <p>I am currently restoring a 1964 Chevelle Supersport.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8-9-f8YfS9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
             <br>
-            <h2>Vehicle Restoration Progress</h2>
-            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600" alt="Classic Truck" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;">
+            <img src="https://images.unsplash.com/photo-1605515298946-d062f2e9da53?w=600" alt="Classic Muscle Car" style="width: 100%; border-radius: 10px;">
 
-            <h2>Global Economic Data</h2>
-            <div class='tableauPlaceholder' id='viz1713235000000' style='position: relative'>
-                <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/Wo/WorldIndicators_16654546415610/GlobalPopulation/1_rss.png' style='border: none' /></a></noscript>
-                <object class='tableauViz' style='display:none;'>
+            <h2>Global Trends Visualization</h2>
+            <div class='tableauPlaceholder' id='viz1713235000000' style='position: relative; margin-top: 20px;'>
+                <object class='tableauViz'  style='display:none;'>
                     <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='name' value='WorldIndicators_16654546415610&#47;GlobalPopulation' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
+                    <param name='name' value='WorldIndicators&#47;GlobalPopulation' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
                 </object>
             </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1713235000000');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.width='100%';vizElement.style.height='600px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
+            <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
 
             <br><br>
-            <a href="#top" style="display: block; text-align: center; background: #eee; padding: 10px; text-decoration: none; border-radius: 5px; color: #333;">Jump back to the top</a>
+            <a href="#top" class="anchor-link">Back to Top of Page</a>
         </div>
     </div>
 </body>
